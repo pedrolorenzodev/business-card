@@ -1,0 +1,115 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: monospace;
+}
+
+.avatar {
+    width: 120px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 7px rgba(70, 73, 76, 1);
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #46494C;
+    border-radius: 20px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    border-bottom: 5px solid #46494C;
+    background-color: #DCDCDD;
+    cursor: pointer;
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    background: linear-gradient(to right, #46494C 46%, #1985A1 50%, #46494C 54%);
+    background-size: 300%;
+    background-position-x: 100%;
+    
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    animation: title-shimmer 2.5s forwards;
+    
+}
+
+.role-text {
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  background: linear-gradient(to left, #46494C 46%, #1985A1 50%, #46494C 54%);
+  background-size: 300%;
+  background-position-x: 100%;
+  
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  animation: role-shimmer 3.5s forwards;
+}
+
+.footer-text {
+    margin-block: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+@keyframes role-shimmer {
+   from {
+    background-position-x: -70%;     
+    }
+   to {
+      background-position-x: 100%
+   }
+}
+
+@keyframes title-shimmer {
+    to {
+        background-position-x: 0%;
+    }
+}
+
+.card:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.05);
+    border-bottom: 6px solid #46494C;
+}
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
